@@ -1,0 +1,51 @@
+@import "src/styles.scss";
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 7.75rem;
+    align-items: center;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+.user-name{
+    padding: .625rem;
+}
+.right-part{
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+}
+::ng-deep .language-dropdown {
+    display: flex;
+    align-items: center;
+    .pi-globe{
+        font-size: 1.1rem;
+        color: var(--font-color);
+        font-weight: 600;
+    }
+    .p-dropdown {
+        background: transparent !important;
+        border: none;
+        font-weight: 500;
+    }
+
+    .p-dropdown-label {
+        color: var(--font-color);
+        padding-right: 0;
+        font-weight: 600;
+    }
+
+    .p-dropdown-trigger {
+        color: var(--font-color);
+        font-weight: 600;
+    }
+
+    .p-dropdown:not(.p-disabled).p-focus {
+        box-shadow: none;
+    }
+}

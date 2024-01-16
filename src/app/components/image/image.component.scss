@@ -1,0 +1,29 @@
+@import "src/styles.scss";
+
+img{
+    width: 100%;
+}
+.user{
+    border-radius: 50%;
+    height: 4.25rem;
+    width: 4.25rem;
+}
+
+.weather-list-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.cibek-logo{
+    width: 10rem;
+}
+.lang{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+@media screen and (max-width: $tablet-max){
+    .weather-list-icon{
+        width: 2rem;
+        height: 2rem;
+    }
+}

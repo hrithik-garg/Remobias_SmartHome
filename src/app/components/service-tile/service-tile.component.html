@@ -1,0 +1,6 @@
+<div class="tile {{cls}}">
+    <div *ngIf="icon" class="icon">
+        <img #imageIcon [src]="icon" alt="">
+    </div>
+    <app-heading [heading]="tileName" headingType="h4" cls="bold" ></app-heading>
+</div>

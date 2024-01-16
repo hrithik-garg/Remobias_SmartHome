@@ -1,0 +1,35 @@
+<app-p-toaster></app-p-toaster>
+<section class="bg-clr">
+    <app-header></app-header>
+    <div class="home-section">
+        <div class="left-section">
+            <div class="calendar-and-traffic-card">
+                <app-calendar-card></app-calendar-card>
+                <app-traffic-card></app-traffic-card>
+            </div>
+            <div class="weather-and-water-card">
+                <app-weather-card></app-weather-card>
+                <app-water-intake></app-water-intake>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="tile-card" *ngFor="let tile of tiles">
+                <a *ngIf="tile?.link" [href]="tile?.link" target="_blank">
+                    <app-service-tile 
+                        [icon]="tile.icon"
+                        [tileName]="tile.title | translate"
+                        [cls]="tile.color">
+                    </app-service-tile>
+                </a>
+                <app-service-tile *ngIf="!tile?.link"
+                        [icon]="tile.icon"
+                        [tileName]="tile.title | translate"
+                        [cls]="tile.color">
+                </app-service-tile>
+            </div>
+            <div class="logo">
+                <app-image [src] = "cibek_logo" cls="cibek-logo"></app-image>
+            </div>
+        </div>
+    </div>
+</section>

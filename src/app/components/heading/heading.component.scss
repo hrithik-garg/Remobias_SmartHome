@@ -1,0 +1,38 @@
+@import "src/styles.scss";
+
+.bold{
+    font-weight: 600;
+}
+.capitalize{
+    @extend .bold;
+    text-transform: uppercase;
+}
+@media screen and (max-width: $tablet-max){
+   h6{
+    font-size: .875rem;
+   }
+   h5{
+    font-size: 1rem;
+   }
+   h3{
+    font-size: 1.5rem;
+   }
+   h4{
+    font-size: 1.25rem;
+   }
+}
+
+@media screen and (max-width: $tablet-max){
+    h3{
+        font-size: 1.75rem;
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    h5{
+        font-size: 1.25rem;
+    }
+    h6{
+        font-size: 1rem;
+    }
+ }

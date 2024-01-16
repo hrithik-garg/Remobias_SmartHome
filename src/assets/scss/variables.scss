@@ -1,0 +1,47 @@
+/* variables scss */
+
+//colors
+$red: #EF0000;
+$light-red: #D87A81;
+$gray: gray;
+$white: #FFF;
+$black: #000;
+$blue: #5A9DD2;
+$dark-blue: #6B7ADB;
+$yellow: #FED50C;
+$dark-yellow: #F2B558;
+$light-yellow: #DCCE71;
+$light-green: #78D26A;
+$green: #21BA4C;
+$pink: #C86CA2;
+$purple: #9372C4;
+$light-gray: #DFDFDF;
+
+:root{
+    --bg-cream: #FDFDFD;
+    --bg-skyblue: #E3ECFA;
+    --card-bg: rgba(255, 255, 255, 0.60);
+    --inner-card-bg: rgba(253, 253, 253, 0.70);
+    --font-color: #313131;
+    --stroke-color: #0EA2B6;
+    --gray: rgba(49, 49, 49, 0.70);
+    --tile-bg: #FFF
+}
+
+//box shadow
+$card-box-shadow: rgba(0, 0, 0, 0.02);
+$tile-box-shadow: rgba(0, 0, 0, 0.10);
+
+$font-style: 'Montserrat';
+
+$small-mobile-max: 30rem;
+$mobile-max: 48rem;
+$tablet-max: 64rem;
+$laptop-max: 90rem;
+
+$font-size-sm: .75rem;
+$font-size-m: .875rem;
+$font-size-lg: 1rem;
+$font-size-xl: 1.25rem;
+$font-size-xxl: 1.5rem;
+$font-size-xxxl: 2.25rem;

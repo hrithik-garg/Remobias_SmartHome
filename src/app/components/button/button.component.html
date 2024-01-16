@@ -1,0 +1,17 @@
+<ng-container [ngSwitch]="buttonType">
+    <ng-container *ngSwitchCase="'primeng'">
+        <p-button
+            [icon]="icon"
+            [label]="buttonName"
+            [styleClass]="cls"
+            (onClick)="onClick()"
+        >
+        </p-button>
+    </ng-container>
+    <ng-container *ngSwitchDefault>
+        <button [class]="cls" type="button" (click)="onClick()">
+            {{ buttonName}}
+            <ng-content></ng-content>
+        </button>
+    </ng-container>
+</ng-container>

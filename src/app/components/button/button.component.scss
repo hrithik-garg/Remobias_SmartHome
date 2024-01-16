@@ -1,0 +1,18 @@
+@import "src/styles.scss";
+
+button{
+    display: flex;
+    align-items: center;
+    border: none;
+    font-size: $font-size-xxl;
+    width: 100%;
+    padding: 1.5rem 1.75rem;
+}
+
+.sos{
+    background: $red;
+    font-weight: 700;
+    border-radius: 4.8125rem;
+    color: $white;
+    height: 4.6248rem;
+}

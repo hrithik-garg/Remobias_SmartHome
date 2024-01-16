@@ -1,0 +1,40 @@
+<section class="calendar-card">
+    <div class="date">
+        <app-heading [heading]="day" headingType="h4">
+        </app-heading>
+        <div class="time-format">
+            <app-heading [heading]="time" cls="bold" headingType="h1">
+            </app-heading>
+            <app-heading [heading]="ampm" cls="bold" headingType="h5">
+            </app-heading>
+        </div>
+        <app-heading [heading]="date" headingType="h6">
+        </app-heading>
+    </div>
+    <div class="events">
+        <div class="event">
+            <div class="event-time">
+                <app-heading heading="All day" cls="bold" headingType="h6">
+                </app-heading>
+                <app-paragraph cls="gray-txt" text="1 hour">
+                </app-paragraph>
+            </div>
+            <div class="event-location">
+                <app-heading cls="bold" [heading]="location" headingType="h6">
+                </app-heading>
+            </div>
+        </div>
+        <div class="yellow-event">
+            <div class="event-time">
+                <app-heading heading="14:00" cls="bold" headingType="h6">
+                </app-heading>
+                <app-paragraph cls="gray-txt" text="1 hour">
+                </app-paragraph>
+            </div>
+            <div class="event-location">
+                <app-heading cls="bold" [heading]="location" headingType="h6">
+                </app-heading>
+            </div>
+        </div>
+    </div>
+</section>

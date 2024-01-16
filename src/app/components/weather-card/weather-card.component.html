@@ -1,0 +1,42 @@
+<section class="weather-section">
+    <div class="header" *ngIf="city">
+        <div class="left" >
+            <app-heading
+                [heading]="city"
+                headingType="h3"
+                cls="bold">
+            </app-heading>
+            <app-heading
+                [heading]="temperature + '°'"
+                headingType="h1"
+                cls="bold">
+            </app-heading>        
+        </div>
+        <div class="right">
+            <app-image 
+                [src] ="getWeatherIcon(currentWeather)" 
+                cls="user"
+                [alt]="'Na'">
+            </app-image>
+        </div>
+    </div>
+    <div class="weather-data">
+        <div class="weather-card" *ngFor="let weather of weatherData">
+            <app-heading
+                [heading]="weather.time"
+                headingType="h6"
+                cls="bold">
+            </app-heading>
+            <app-image 
+                [src]="weather.icon" 
+                cls="weather-list-icon"
+                alt="weather-icon">
+            </app-image>
+            <app-heading
+                [heading]="weather.temperature + '°'"
+                headingType="h6"
+                cls="bold">
+            </app-heading>
+        </div>
+    </div>
+</section>

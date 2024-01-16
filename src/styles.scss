@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import "assets/scss/variables.scss";
+
+
+html, body {
+    font-family: $font-style;
+}
+
+div{
+    color: var(--font-color);
+}
+
+/* global scss */
+
+* {
+	box-sizing: border-box;
+    font-family: $font-style;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,43 @@
+@import "src/styles.scss";
+
+.tile{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: .5rem;
+    border-radius: 2rem;
+    background-blend-mode: overlay, normal;
+    box-shadow: 0rem 0rem 1rem 0rem $tile-box-shadow
+}
+
+.blue-bg{
+    background: linear-gradient(135deg, var(--tile-bg) -20%, $blue 88%, $blue 84%);
+}
+.light-green-bg{
+    background: linear-gradient(to bottom right, var(--tile-bg) -20%, $light-green 88%, $light-green 84%);
+}
+.dark-yellow-bg{
+    background: linear-gradient(135deg, var(--tile-bg) -20%, $dark-yellow 88%, $dark-yellow 84%);
+}
+.pink-bg{
+    background: linear-gradient(135deg, var(--tile-bg) -20%, $pink 88%, $pink 84%);
+}
+.purple-bg{
+    background: linear-gradient(135deg, var(--tile-bg) -20%, $purple 88%, $purple 84%);
+}
+.light-red-bg{
+    background: linear-gradient(135deg, var(--tile-bg) -20%, $light-red 88%, $light-red 84%);
+}
+.dark-blue-bg{
+    background: linear-gradient(135deg, var(--tile-bg) -20%, $dark-blue 88%, $dark-blue 84%);
+}
+.light-yellow-bg{
+    background: linear-gradient(135deg, var(--tile-bg) -20% , $light-yellow 88%, $light-yellow 84%);
+}
+
+.dark-mode{
+    filter: brightness(0) invert(1);
+}

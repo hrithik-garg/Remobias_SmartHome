@@ -1,0 +1,62 @@
+@import "src/styles.scss";
+
+.weather-section{
+    display: flex;
+    width: 100%;
+    min-height: 15.25rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: .625rem;
+    align-self: stretch;
+    border-radius: 1.5rem;
+    background: var(--card-bg);
+    box-shadow: 0rem 0rem 1.5rem 0rem $card-box-shadow;
+    backdrop-filter: blur(.375rem);
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.weather-data{
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+.weather-card{
+    display: flex;
+    min-width: 3.75rem;
+    padding: .75rem .625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+    flex-grow: 1;
+    background: var(--inner-card-bg);
+    border-radius: .5rem;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+@media screen and (max-width: $laptop-max){
+    .weather-card{
+        flex: 0 0 18%;
+    }
+}
+@media screen and (max-width: $tablet-max){
+    .weather-card{
+        flex: 0 0 24%;
+    }
+}
+@media screen and (max-width: $mobile-max){
+    .weather-card{
+        flex: 0 0 15%;
+    }
+}

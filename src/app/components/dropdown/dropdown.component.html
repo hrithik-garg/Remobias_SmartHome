@@ -1,0 +1,14 @@
+<span [class]="'p-float-label ' + cls">
+    <p-dropdown
+        [formControl]="control"
+        [options]="dropdownOptions"
+        [optionLabel]="name"
+        [optionValue]="optionValue"
+        [placeholder]="placeholder | translate"
+        [styleClass]="inputCls"
+    ></p-dropdown>
+    <label *ngIf="showLabel">{{ label | translate }}</label>
+    <small *ngIf="control.invalid && control.touched" class="p-error">{{
+        control | validationError : (label | translate)
+    }}</small>
+</span>

@@ -1,0 +1,46 @@
+<div class="water-intake-section">
+    <app-heading
+        headingType="h3"
+        cls="bold"
+        [heading]="'waterIntake' | translate">
+    </app-heading>
+    <div class="lower-part">
+        <div class="water-progress">
+            <p-knob [size]="130" [readonly]="true" [(ngModel)]="value" valueTemplate="{value}%" valueColor="#0EA2B6" [style]="{ 'width': '7.5rem', 'height': '7.5rem' }" [strokeWidth]="10"></p-knob>
+        </div>
+        <div class="water-cards" >
+            <div class="water-card" (click)="addWaterIntake(100)">
+                <img src="./assets/icons/Drop.png" alt="">
+                <app-heading
+                    headingType="h6"
+                    cls="bold"
+                    heading="100ml">
+                </app-heading>
+            </div>
+            <div class="water-card" (click)="addWaterIntake(180)">
+                <img src="./assets/icons/Coffee.png" alt="">
+                <app-heading
+                    headingType="h6"
+                    cls="bold"
+                    heading="180ml">
+                </app-heading>
+            </div>
+            <div class="water-card" (click)="addWaterIntake(500)">
+                <img src="./assets/icons/Bottle.png" alt="">
+                <app-heading
+                    headingType="h6"
+                    cls="bold"
+                    heading="500ml">
+                </app-heading>
+            </div>
+            <div class="water-card" (click)="addWaterIntake(250)">
+                <img src="./assets/icons/glass.png" alt="">
+                <app-heading
+                    headingType="h6"
+                    cls="bold"
+                    heading="250ml">
+                </app-heading>
+            </div>
+        </div>
+    </div>
+<div>
